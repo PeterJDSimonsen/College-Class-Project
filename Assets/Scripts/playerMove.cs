@@ -31,7 +31,7 @@ public class playerMove : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            velocity.y = 7.5f;
+            velocity.y = 6;
         }
         rb.velocity = velocity;
         //Makes the player jump. The more it's held, the higher the jump.
