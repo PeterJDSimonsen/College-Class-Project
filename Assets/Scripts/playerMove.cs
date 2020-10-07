@@ -13,6 +13,7 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 velocity = rb.velocity;
         float xSpeed;
         if (Input.GetKey("d"))
         {
@@ -30,8 +31,9 @@ public class playerMove : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            rb.velocity = new Vector3(0, 5, 0);
+            velocity.y = 7.5f;
         }
+        rb.velocity = velocity;
         //Makes the player jump. The more it's held, the higher the jump.
     }
 }
