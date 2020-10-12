@@ -19,12 +19,12 @@ public class enemyMove : MonoBehaviour
         if (timer == 600)
         {
             timer = 0;
-            rb.velocity = new Vector2(-5, 0);
+            rb.velocity = new Vector2(5, 0);
             Debug.Log(timer);
         }
-        else if (timer == 300)
+        if (timer == 300)
         {
-            rb.velocity = new Vector2(5, 0);
+            rb.velocity = new Vector2(-5, 0);
         }
     }
 }
