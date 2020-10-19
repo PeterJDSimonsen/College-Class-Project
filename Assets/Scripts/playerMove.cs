@@ -7,6 +7,9 @@ public class playerMove : MonoBehaviour
     SpriteRenderer sR;
     public Sprite standSprite;
     public Sprite jumpSprite;
+    public Sprite fallingSprite;
+    public Sprite attackSprite;
+    public Sprite midairSprite;
     Rigidbody2D rb;
     void Start()
     {
@@ -48,5 +51,17 @@ public class playerMove : MonoBehaviour
         {
             sR.sprite = standSprite;
         }
+        //Initiates the jumping animation depending on the player's velocity
+        if (Input.GetKey("z"))
+        {
+            sR.sprite = attackSprite;
+        }
+        //Initiates the attack animation when Z is pressed
+
+        if (velocity.y < -0.5f)
+        {
+            sR.sprite = fallingSprite;
+        }
+        //Initiates the falling animation depending on the player's velocity
     }
 }

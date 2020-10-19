@@ -318,6 +318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standSprite: {fileID: 21300000, guid: b535dafa3ef90a644b5b3393b6b2d425, type: 3}
   jumpSprite: {fileID: 21300000, guid: b3f70d1151d43e44cbcf5119b646b7ef, type: 3}
+  fallingSprite: {fileID: 21300000, guid: 5fa44bb59bf2fbf4692bebc2f90082e7, type: 3}
+  attackSprite: {fileID: 21300000, guid: 1d6c7a133a9aa9b4494f42f1eb0fe668, type: 3}
+  midairSprite: {fileID: 0}
 --- !u!50 &757472666
 Rigidbody2D:
   serializedVersion: 4
